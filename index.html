@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>My Portofolio Fullstack DEV</title>
+        <title>RexxzynXD_DEV</title>
         <link rel="stylesheet" href="style.css">
         <script src="https://kit.fontawesome.com/687108781d.js" crossorigin="anonymous"></script>
     </head>
@@ -20,256 +20,164 @@
                         <span class="animated-line"></span>
                     </p>
                     <h1>Hi, I'am <span>RexxzynXD</span><br>From Indonesia</h1>
-                    <a href="https://rexxzynxd.my.id" class="box">Start</a>
+                    <div id="loaderContainer"></div>
+                    <a href="#" class="box" id="startButton">Start</a>
                     <a href="https://www.instagram.com/rexxzynxd" class="box">Instagram</a>
                 </div>
             </div>
         </div>
-            <!---------------about----------------->
-            <div id="about">
-                <div class="container">
-                    <div class="row">
-                        <div class="about-col-1">
-                            <img src="assets/user.jpg">
+
+        <!-- About Section -->
+        <div id="about" style="display: none;">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="assets/user.jpg">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">Tentang Saya</h1>
+                        <p>Hai, perkenalkan saya Rexx (Menggunakan Nama Nickname Demi Menjaga Nama Asli). Saya adalah Developer Pemula, Saya hanya seorang programmer biasa, Bahasa Bahasa Pemrograman Yang saya Sukai ialah JS/JavaScript. Saya seorang siswa dari asal sekolah SMK Karya Bahana Mandiri 1 Dengan Jurusan yang saya ambil ialah DESAIN KOMUNIKASI VISUAL (DKV). Untuk Selengkapnya Kalian Bisa Liat Web Pribadi Saya, jangan lupa juga support saya dengan mengikuti platform semua sosmed pada icon dibawah ini. </p>
+                        <!-- Tab Section -->
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experince')">Experince</p>
+                            <p class="tab-links" onclick="opentab('education')">Inspirasi Saya</p>
                         </div>
-                        <div class="about-col-2">
-                            <h1 class="sub-title">Tentang Saya</h1>
-                            <p><br>Hai, perkenalkan saya Rexx (Menggunakan Nama Nickname Demi Menjaga Nama Asli). Saya adalah Developer Pemula, Saya hanya seorang programmer biasa, Bahasa Bahasa Pemrograman Yang saya Sukai ialah JS/JavaScript. Saya seorang siswa dari asal sekolah SMK Karya Bahana Mandiri 1 Dengan Jurusan yang saya ambil ialah DESAIN KOMUNIKASI VISUAL (DKV). Untuk Selengkapnya Kalian Bisa Liat Web Pribadi Saya, jangan lupa juga support saya dengan mengikuti platform semua sosmed pada icon dibawah ini. </p>
-                            <div class="tab-titles">
-                                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                                <p class="tab-links" onclick="opentab('experince')">Experince</p>
-                                <p class="tab-links" onclick="opentab('education')">Inspirasi Saya</p>
-                            </div>
-                            <div class="tab-contents active-tab" id="skills">
-                                <ul>
-                                    <li><span>Content Creator</span><br>My Youtube: RexxzynXD</li>
-                                    <li><span>Web Develpoment</span><br>Baru Belajar HTML pada 06/07/2022</li>
-                                    <li><span>App Develpoment</span><br>Only JavaScript to Building Scripts</li>
-                                </ul>
-                            </div>
-                            <div class="tab-contents" id="experince">
-                                <ul>
-                                    <li><span>2021 - Current</span><br>Menerbitkan/Membuat Sebuah Project yang berguna untuk semua orang.</li>
-                                    <li><span>2022 - 2023</span><br>Membuat Nama Brand untuk Memulai Karrier Di Dunia Digital.</li>
-                                    <li><span>2023 - 2024</span><br>Membuat Bot / Robot di platform WhatsApp dan Telegram.</li>
-                                   <li><span>2025 - Current</span><br>Insyaallah Terjun ke app / aplikasi.</li>
-                                </ul>
-                            </div> 
-                            <div class="tab-contents" id="education">
-                                <ul>
-                                    <li><span>Belajar Otodidak With</span><br>Dea Afrizal</li>
-                                    <li><span>Belajar Otodidak With</span><br>Sandhika Galih</li>
-                                    <li><span>Belajar Otodidak With</span><br>Agus Creative id</li>
-                                    <li><span>Belajar Otodidak With</span><br>Dicoding</li>
-                                </ul>
-                            </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Content Creator</span><br>My Youtube: RexxzynXD</li>
+                                <li><span>Web Development</span><br>Baru Belajar HTML pada 06/07/2022</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experince">
+                            <ul>
+                                <li><span>2021 - Current</span><br>Menerbitkan/Membuat Sebuah Project yang berguna untuk semua orang.</li>
+                            </ul>
+                        </div> 
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>Belajar Otodidak With</span><br>Dea Afrizal</li>
+                                <li><span>Belajar Otodidak With</span><br>Sandhika Galih</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
-            </div>
-
-            <!-- Services Section -->
-    <section class="services">
-        <div class="container">
-            <h2>Servis saya</h2>
-            <div class="service-item">
-                <h3>Support Keren</h3>
-                <p>Saya Selalu siap bantu dengan solusi terbaik untuk kebutuhan desain anda</p>
-            </div>
-            <div class="service-item">
-                <h3>Desain Unik</h3>
-                <p>Setiap karya saya punya gaya yang beda dan nggak pasaran.</p>
-            </div>
-            <div class="service-item">
-                <h3>Tepat Waktu</h3>
-                <p>Saya selalu tepat waktu karena saya paham waktu adalah uang.</p>
-            </div>
-            <div class="service-item">
-                <h3>Bekerja dengan Jujur</h3>
-                <p>Menurut saya Kejujuran adalah prioritas utama dalam bekerja.</p>
             </div>
         </div>
-    </section>
 
-            <!-----------------services--------------->
-            <div id="services">
-                <div class="container">
-                    <h1 class="sub-title">RexxzynXD <span>Digital Store<br></span></h1>
-                    <p>Tentang Pelayanan Kami:<br>Top Best Seller And Item</p>
-                    <div class="services-list">
-                        <div>
-                            <i class="fa-solid fa-rocket"></i>
-                            <h2>Panel Pterodactyl</h2>
-                            <p>Panel Pterodactyl adalah panel manajemen server game sumber terbuka gratis yang dibuat dengan PHP, React, dan Go. Dirancang dengan mempertimbangkan keamanan, Pterodactyl menjalankan semua server game dalam wadah Docker yang terisolasi sambil memperlihatkan UI yang indah dan intuitif kepada pengguna akhir.</p>
-                            <a href="#">Order Klik Here</a>
-                        </div>
-                        <div>
-                            <i class="fa-solid fa-code"></i>
-                            <h2>Pembuatan Website</h2>
-                            <p>Kamu Kesulitan Untuk membuat website Pribadi/Perusahaan? Kamu bisa kunjungi website store kami yang ada pada link dibawah ini!..</p>
-                            <a href="#">Order Klik Here</a>
-                        </div>
-                        <div>
-                            <i class="fa-regular fa-file-code"></i>
-                            <h2>RexxzyDigitalStore</h2>
-                            <p>Kunjungi Web Dibawah ini untuk lebih jelasnya✨ </p>
-                            <a href="#">Order Klik Here</a>
+        <!-- Services Section -->
+        <section class="services" style="display: none;">
+            <div class="container">
+                <h2>Servis saya</h2>
+                <div class="service-item">
+                    <h3>Support Keren</h3>
+                    <p>Saya Selalu siap bantu dengan solusi terbaik untuk kebutuhan desain anda</p>
+                </div>
+                <div class="service-item">
+                    <h3>Desain Unik</h3>
+                    <p>Setiap karya saya punya gaya yang beda dan nggak pasaran.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Tepat Waktu</h3>
+                    <p>Saya selalu tepat waktu karena saya paham waktu adalah uang.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Bekerja dengan Jujur</h3>
+                    <p>Menurut saya Kejujuran adalah prioritas utama dalam bekerja.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Section -->
+        <section class="portfolio container" style="display: none;">
+            <h2>My project</h2>
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <img src="assets/project1.jpg" alt="Project 1">
+                    <h3>Project 1</h3>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimoni Section -->
+        <div id="testimoni" style="display: none;">
+            <div class="container">
+                <h1 class="sub-title">Testimoni My Store</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="assets/testi1.jpg">
+                        <div class="layer">
+                            <h3>TOP DONATUR & BUYER KE-1</h3>
+                            <p>Top pertama Buyer Kami Dengan Membeli Script Bot WhatsApp Dengan Harga Dan Kualitas Terbaik.</p>
+                            <a href="wa.me/6285692060114"><i class="fa-solid fa-up-right-from-square"></i></a>
                         </div>
                     </div>
                 </div>
-            </div>
-
-            <!-- Portfolio Section -->
-    <section class="portfolio container">
-        <h2>My project</h2>
-        <div class="portfolio-grid">
-            <div class="portfolio-item">
-                <img src="assets/project1.jpg" alt="Project 1">
-                <h3>Project 1</h3>
             </div>
         </div>
-    </section>
 
-             <!-----------------My Testimoni--------------->
-             <div id="testimoni">
+        <!-- Footer Section -->
+        <footer id="footer" style="display: none;">
+            <div class="footer-top">
                 <div class="container">
-                    <h1 class="sub-title">Testimoni My Store</h1>
-                    <div class="work-list">
-                        <div class="work">
-                            <img src="assets/testi1.jpg">
-                            <div class="layer">
-                                <h3>TOP DONATUR & BUYER KE-1</h3>
-                                <p>Top pertama Buyer Kami Dengan Membeli Script Bot WhatsApp Dengan Harga Dan Kualitas Terbaik.</p>
-                                <a href="wa.me/6285692060114"><i class="fa-solid fa-up-right-from-square"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-             </div>
-             <!-----------------Portofolio--------------->
-             <div id="portofolio">
-                <div class="container">
-                    <h1 class="sub-title">Konten Terbaru Saya</h1>
-                    <div class="work-list">
-                        <div class="work">
-                            <img src="assets/proyek1.jpg">
-                            <div class="layer">
-                                <h3>Video Terbaru</h3>
-                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                                <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
-                            </div>
-                        </div>
-                        </div>
-                    </div>
-                </div>
-             </div>
-
-            <!-- Statistics Section -->
-            <section class="statistics">
-                <div class="container">
-                    <div class="stat">
-                        <h3>100%</h3>
-                        <p>protection</p>
-                    </div>
-                    <div class="stat">
-                        <h3>100%</h3>
-                        <p>keamanan</p>
-                    </div>
-                    <div class="stat">
-                        <h3>100%</h3>
-                        <p>Kualitas</p>
-                    </div>
-                    <div class="stat">
-                        <h3>92%</h3>
-                        <p>Klien Puas</p>
-                    </div>
-                    <div class="stat">
-                        <h3>6</h3>
-                        <p>Web Dibuat</p>
-                    </div>
-                    <div class="stat">
-                        <h3>127</h3>
-                        <p>Cangkir Kopi</p>
-                    </div>
-                </div>
-            </section>
-
-             <!-----------------Footer--------------->
-             <footer id="footer">
-                <div class="footer-top">
-                  <div class="container">
                     <div class="row">
-                      <div class="col-lg-4 col-md-6">
-                        <div class="footer-info">
-                          <h3>
-                              RexxzynXD DEV
-                          </h3>
-                          <p class="pb-3"><em></em></p>
-                          <p>JawaBarat,<br>Indonesian<br><br><strong>Phone:</strong> +6287734034677<br><strong>Email:</strong>
-                              RexxzynXD@gmail.com<br></p>
-                          <div class="social-links mt-3">
-                            <a href="https://www.youtube.com/@RexxzynXD" class="twitter"><i class="fa-brands fa-youtube"></i></a>
-                            <a href="https://T.me/RexxzynXD" class="facebook"><i class="fa-brands fa-telegram"></i></a>
-                            <a href="https://www.instagram.com/rexxzynxd" class="instagram"><i
-                                class="fa-brands fa-instagram"></i></a>
-                            <a href="https://github.com/RexxHayanasi b" class="google-plus"><i class="fa-brands fa-github"></i></a>
-                            <a href="#" class="linkedin"><i class="fa-solid fa-link"></i></a>
-                          </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="footer-info">
+                                <h3>RexxzynXD DEV</h3>
+                                <p>JawaBarat,<br>Indonesian<br><br><strong>Phone:</strong> +6287734034677<br><strong>Email:</strong> RexxzynXD@gmail.com</p>
+                                <div class="social-links mt-3">
+                                    <a href="https://www.youtube.com/@RexxzynXD" class="twitter"><i class="fa-brands fa-youtube"></i></a>
+                                    <a href="https://T.me/RexxzynXD" class="facebook"><i class="fa-brands fa-telegram"></i></a>
+                                    <a href="https://www.instagram.com/rexxzynxd" class="instagram"><i class="fa-brands fa-instagram"></i></a>
+                                    <a href="https://github.com/RexxHayanasi b" class="google-plus"><i class="fa-brands fa-github"></i></a>
+                                    <a href="#" class="linkedin"><i class="fa-solid fa-link"></i></a>
+                                </div>
+                            </div>
                         </div>
-                      </div>
-                      <div class="col-lg-2 col-md-6 footer-links">
-                        <h4>Useful Links</h4>
-                        <ul>
-                          <li><i class="fa-solid fa-chevron-right"></i> <a href="#">Home</a></li>
-                          <li>
-                          <li><i class="fa-solid fa-chevron-right"></i> <a href="https://rfshacoderid.my.id">Pricing</a></li>
-                          <li>
-                          <li><i class="fa-solid fa-chevron-right"></i> <a href="https://t.me/Rafashaalfian">Contact</a></li>
-                        </ul>
-                      </div>
-                      <div class="col-lg-4 col-md-6 footer-newsletter">
-                        <h4>SUPPORT KAMI SETERUSNYA!</h4>
-                        <p>Bantu Support Kami, Jika kalian butuh bantuan Conctact Owner Di Samping Kiri</p>
-                        <form action="#" method="post"><input type="email" name="email"><input type="submit" value="Subscribe">
-                        </form>
-                      </div>
                     </div>
-                  </div>
                 </div>
-                <div class="container">
-                  <div class="copyright">&copy; Copyright <strong><span>Rfshadevv</span></strong>. All Rights Reserved</div>
-                  <div class="credits">Designed by <a href="https://youtube.com/ichangaming">RfshacoderID</a></div>
-                </div>
-              </footer>
+            </div>
+        </footer>
 
-            <script>
+        <script>
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
 
-                var tablinks = document.getElementsByClassName("tab-links")
-                var tabcontents = document.getElementsByClassName("tab-contents")
-                function opentab(tabname){
-                    for(tablink of tablinks){
-                        tablink.classList.remove("active-link");
-                    }
-                    for(tabcontent of tabcontents){
-                        tabcontent.classList.remove("active-tab");
-                    }
-                    event.currentTarget.classList.add("active-link");
-                    document.getElementById(tabname).classList.add("active-tab");
+            function opentab(tabname) {
+                for (var tablink of tablinks) {
+                    tablink.classList.remove("active-link");
                 }
-
-            </script>
-
-            <script>
-
-                var sidemeu = document.getElementById("sidemenu");
-
-                function openmenu(){
-                    sidemeu.style.right = "0";
-                }function closemenu(){
-                    sidemeu.style.right = "-200px";
+                for (var tabcontent of tabcontents) {
+                    tabcontent.classList.remove("active-tab");
                 }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+            }
 
-            </script>
+            var sidemeu = document.getElementById("sidemenu");
 
-        </body>
+            function openmenu() {
+                sidemeu.style.right = "0";
+            }
+
+            function closemenu() {
+                sidemeu.style.right = "-200px";
+            }
+
+            document.getElementById('startButton').addEventListener('click', function(event) {
+                event.preventDefault();
+                const loaderContainer = document.getElementById('loaderContainer');
+                loaderContainer.innerHTML = '<div class="loader"></div>';
+
+                setTimeout(() => {
+                    loaderContainer.innerHTML = '';
+                    document.getElementById('about').style.display = 'block';
+                    document.getElementById('services').style.display = 'block';
+                    document.getElementById('portfolio').style.display = 'block';
+                    document.getElementById('testimoni').style.display = 'block';
+                    document.getElementById('footer').style.display = 'block';
+                }, 2000);
+            });
+        </script>
+    </body>
 </html>
